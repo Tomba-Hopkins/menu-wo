@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --item: #1B262C;
+    --putih: #BBE1FA;
+    --primary: #3282B8;
+    --secondary: #0F4C75;
+}
+
+body {
+    background-color: var(--item);
+}
+
+.headline {
+    color: var(--putih);
+    text-align: center;
+    margin: 1rem;
+}
+
+.container {
+    width: 90vw;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    height: 15rem;
+    background-color: var(--item);
+    margin: 2rem;
+    color: var(--putih);
+    border: 0.3rem solid var(--primary);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.fade {
+    animation: fade 1.8s linear;
+}
+
+.gambar {
+    width: 100%;
+    height: 50%;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+}
+
+.text {
+    color: var(--putih);
+    margin: 0.5rem;
+    text-align: right;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.button {
+    width: 5rem;
+    height: 2rem;
+    background-color: var(--primary);
+    color: var(--putih);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.4rem;
+}
+
+@keyframes fade {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
