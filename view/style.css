@@ -17,12 +17,14 @@ body {
     max-width: 100vw;
     background-color: var(--item);
     color: var(--putih-second);
+    font-family: 'Open Sans', sans-serif;
 }
 
 
 main {
     width: 100%;
     padding: 1rem;
+    /* overflow: hidden; */
 }
 
 .section {
@@ -34,6 +36,7 @@ main {
     justify-content: space-around;
     background-color: var(--item-second);
     border-radius: 1rem 1rem 0 0 ;
+    margin: 3rem 0;
 }
 
 .item {
@@ -112,3 +115,19 @@ main {
     height: 0.2rem;
     background-color: var(--item-second);
 }
+
+.ilang {
+    animation: 1s ilang ease-in;
+}
+
+@keyframes ilang {
+    0% {
+        opacity: 0;
+        /* margin: 100% 0; */
+        /* transform: translateX(100%); */
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
