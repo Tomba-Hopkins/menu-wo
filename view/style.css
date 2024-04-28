@@ -58,6 +58,10 @@ main {
 
 }
 
+.card-inside {
+    padding: 1rem;
+}
+
 .gambar {
     width: 100%;
     object-fit: cover;
