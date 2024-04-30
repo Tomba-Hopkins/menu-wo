@@ -20,6 +20,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Header Start */
+
 header {
     width: 100%;
     padding: 1rem;
@@ -73,6 +75,9 @@ header {
     color: var(--item-second);
 }
 
+/* Header End */
+
+/* Main Start */
 main {
     width: 100%;
     padding: 1rem;
@@ -173,9 +178,7 @@ main {
     background-color: var(--item-second);
 }
 
-.ilang {
-    animation: 1s ilang ease-in;
-}
+
 
 @keyframes ilang {
     0% {
@@ -188,7 +191,82 @@ main {
     }
 }
 
+/* Main End */
+
+
+
+/* Section: Random quotes start */
+
+.random-quotes {
+    width: 100%;
+    height: 40vh;
+    padding: 1rem;
+    text-align: center;
+    margin: 3rem 0;
+    color: var(--putih);
+}
+
+.random-quotes h3 {
+    padding: 1rem;
+    border-left: 0.3rem solid var(--putih-second);
+
+}
+
+.random-quotes h3 span {
+    color: var(--item-second);
+}
+
+.random-quotes .box-quotes {
+    width: 100%;
+    height: 50%;
+    margin: 2rem 0;
+}
+
+.random-quotes .box-quotes .quotes {
+    margin: 1.5rem 1.5rem;
+    text-align: left;
+    color: var(--putih-second);
+    font-style: italic;
+    /* animation: ilang 1s linear; */
+    /* display: none; */
+}
+
+.button-quotes {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--putih-second);
+    color: var(--item);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.button-quotes:hover {
+    background-color: var(--item-second);
+    color: var(--putih-second);
+}
+
+/* Section: Random quotes end */
+
+
+/* Component start */
+.ilang {
+    animation: 1s ilang ease-in;
+}
+/* Component end */
+
+
 @media (min-width: 640px) {
+    .headline {
+        margin: 7rem 0;
+        text-align: center;
+    }
+    .headline h4 {
+        font-size: 2rem;
+    }
+    .headline p {
+        font-size: 1.2rem;
+    }
     .section {
         margin: 6rem auto;
     }
@@ -203,5 +281,10 @@ main {
     }
     .gambar:hover{
         border-radius: 50%;
+    }
+    .random-quotes .box-quotes .quotes {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 }
