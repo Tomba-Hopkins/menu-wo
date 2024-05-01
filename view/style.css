@@ -249,10 +249,148 @@ main {
 /* Section: Random quotes end */
 
 
+/* Section about start */
+.about {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--putih-second);
+    color: var(--item);
+    padding: 1rem;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-bottom: 0.3rem solid var(--item);
+}
+
+.about .isi-about {
+    margin: 3rem 0;
+    width: 100%;
+    height: 60%;
+    /* border: 3px solid black; */
+    border-radius: 1rem;
+    background-color: var(--item);
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.about .isi-about .swipe {
+    font-style: italic;
+    margin: 1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    color: var(--putih-second);
+    letter-spacing: 0.1rem;
+}
+
+@keyframes nyapu {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    } 100% {
+        opacity: 1;
+        transform:  translateY(0);
+    }
+}
+
+/* Section about end */
+
+
+
+/* Section connect start */
+
+.connect {
+    width: 100%;
+    height: 150vh;
+    background-color: var(--item);
+    padding: 1rem;
+}
+
+.connect h1 {
+    text-align: center;
+    margin: 7rem 0;
+    font-size: 2rem;
+}
+
+.connect h1 span {
+    color: var(--item-second);
+}
+
+.connect .sosmed {
+    width: 100%;
+    height: 50%;
+    margin: 2rem 0;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.connect .sosmed a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 80%;
+   height: 80%;
+}
+
+.connect .sosmed a svg {
+    fill: var(--putih-second);
+    transition: 1s;
+    animation: ilang 1s linear;
+
+}
+
+.connect .sosmed a svg:hover{
+    fill: var(--item-second);
+}
+
+/* Section connect end */
+
+
+
+/* footer start */
+
+footer {
+    width: 100%;
+    height: 5vh;
+    background-color: var(--putih-second);
+    color: var(--item);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 10rem 0;
+}
+
+footer p {
+    color: var(--item);
+    font-weight: bolder;
+    font-size: x-small;
+}
+
+footer p span {
+    color: var(--item-second);
+}
+
+/* footer end */
+
+
+
 /* Component start */
 .ilang {
     animation: 1s ilang ease-in;
 }
+
+.nyapu {
+    animation: 1s nyapu ease-in;
+}
+
 /* Component end */
 
 
@@ -286,5 +424,23 @@ main {
         text-align: center;
         align-items: center;
         justify-content: center;
+    }
+
+    .about .isi-about{
+        width: 50%;
+        margin: 6rem auto;
+    }
+
+    .connect{
+        height: 150vh;
+    }
+
+    .connect .sosmed {
+        width: 100%;
+        height: 60%;
+    }
+
+    .connect .sosmed a {
+        width: 20%;
     }
 }

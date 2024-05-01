@@ -42,3 +42,23 @@ tombol.addEventListener('click', function(){
 
 
 })
+
+
+
+
+
+const observerNyapu = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('nyapu')
+        } else {
+            entry.target.classList.remove('nyapu')
+        }
+    })
+})
+
+const swipes = document.querySelectorAll('.swipe')
+
+swipes.forEach((swipe) => {
+        observerNyapu.observe(swipe)
+})
