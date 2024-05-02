@@ -75,9 +75,29 @@ header {
     color: var(--item-second);
 }
 
+
+
 /* Header End */
 
+.barbel {
+    width: 5em;
+    height: 2rem;
+    margin: 0 4rem;
+    animation: png 1s alternate infinite;
+}
+
+@keyframes png {
+    0% {
+        transform: translateY(2rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+
 /* Main Start */
+
 main {
     width: 100%;
     padding: 1rem;
