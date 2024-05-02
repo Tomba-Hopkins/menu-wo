@@ -272,7 +272,6 @@ main {
     height: 60%;
     /* border: 3px solid black; */
     border-radius: 1rem;
-    background-color: var(--item);
     padding: 1rem;
     overflow: hidden;
 }
@@ -282,7 +281,7 @@ main {
     margin: 1rem;
     line-height: 1.5rem;
     font-weight: bold;
-    color: var(--putih-second);
+    color: var(--item);
     letter-spacing: 0.1rem;
 }
 
