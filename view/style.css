@@ -224,6 +224,7 @@ main {
     text-align: center;
     margin: 3rem 0;
     color: var(--putih);
+    margin-bottom: 5rem;
 }
 
 .random-quotes h3 {
@@ -265,8 +266,87 @@ main {
     background-color: var(--item-second);
     color: var(--putih-second);
 }
-
 /* Section: Random quotes end */
+
+
+/* Section Stopwatch start*/
+.stopwatch {
+    width: 100%;
+    height: 60vh;
+    background-color: var(--item);
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem auto;
+}
+
+.stopwatch h3 {
+    color: var(--item-second);
+    margin-bottom: 1rem;
+}
+
+.stopwatch h3 span {
+    color: var(--putih);
+}
+
+.stopwatch .stopwatch-time{
+    width: 90%;
+    height: 40%;
+    background-color: var(--item-second);
+    margin: 3rem auto;
+    border-radius: 2rem;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stopwatch .stopwatch-time p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--putih);
+}
+
+.stopwatch-button {
+    width: 100%;
+    height: 30%;
+    padding: 1rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.stopwatch-button button{
+    margin: 0 1rem;
+    transition: 0.5s;
+}
+
+.stopwatch-button button:hover{
+    background-color: var(--item-second);
+    color: var(--putih-second);
+}
+
+.stopwatch-button .start {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.stopwatch-button .pause {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.4rem;
+}
+
+.stopwatch-button .reset {
+    width: 4rem;
+    height: 2.5rem;
+    color: var(--item);
+    font-weight: bold;
+}
+
+/* Section Stopwatch end*/
+
+
 
 
 /* Section about start */

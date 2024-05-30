@@ -44,6 +44,13 @@ tombol.addEventListener('click', function(){
 })
 
 
+// Stopwatch
+const stopwatchTime = document.querySelector('p-time')
+const startButton = document.querySelector('.start')
+
+startButton.add('click', () => {
+    
+})
 
 
 
