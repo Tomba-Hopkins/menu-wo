@@ -109,8 +109,6 @@ stopButton.addEventListener('click', () => {
 
 
 
-
-
 const observerNyapu = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting){
