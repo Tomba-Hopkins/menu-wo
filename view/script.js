@@ -59,6 +59,9 @@ let detik = 0
 let muter = null
 
 startButton.addEventListener('click', () => {
+
+    startButton.classList.add('gatau-dah')
+    
     if (muter === null) {
         muter = setInterval(() => {
             detik += 1
@@ -90,6 +93,10 @@ stopButton.addEventListener('click', () => {
         clearInterval(muter)
         muter = null
     }
+
+    startButton.classList.remove('gatau-dah')
+
+    
     detik = 0
     menit = 0
     jam = 0

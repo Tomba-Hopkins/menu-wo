@@ -326,22 +326,36 @@ main {
 }
 
 .stopwatch-button .start {
-    width: 2.5rem;
-    height: 2.5rem;
+    width:3rem;
+    height:3rem;
     border-radius: 50%;
+    border: 3px solid var(--item-second);
+    transition: 1s;
 }
 
 .stopwatch-button .pause {
-    width: 2.5rem;
-    height: 2.5rem;
+    width:3rem;
+    height:3rem;
     border-radius: 0.4rem;
+    border: 3px solid var(--item-second);
+    transition: 1s;
 }
 
-.stopwatch-button .reset {
-    width: 4rem;
-    height: 2.5rem;
-    color: var(--item);
-    font-weight: bold;
+.gatau-dah {
+    animation: 1s startMuter infinite linear;
+}
+
+@keyframes startMuter {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.5);
+        background-color: var(--item-second);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* Section Stopwatch end*/
