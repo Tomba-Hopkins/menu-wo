@@ -366,7 +366,7 @@ main {
 /* Section about start */
 .about {
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
     background-color: var(--putih-second);
     color: var(--item);
     padding: 1rem;
